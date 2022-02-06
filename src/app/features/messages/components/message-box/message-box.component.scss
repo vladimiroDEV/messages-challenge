@@ -1,0 +1,85 @@
+@import "../../../../../scss/variables";
+
+.message-box {
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+
+  &--reverse {
+    float: right;
+    flex-direction: row-reverse;
+  }
+
+  &__avatar {
+    margin-top: 0.5rem;
+
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+  }
+
+  &__content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+
+  &__text {
+    margin-top: 1rem;
+    padding: 2rem;
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    &--left {
+      background-color: $light-grey;
+    }
+
+    &--right {
+      background-color: $dark-grey;
+    }
+
+    &--left::before {
+
+      content: "";
+      position: absolute;
+      visibility: visible;
+      top: 0px;
+      border: 10px solid transparent;
+      border-top: 20px solid $light-grey;
+      left: -8px;
+
+    }
+    &--right::before {
+
+        content: "";
+        position: absolute;
+        visibility: visible;
+        top: 0px;
+        border: 10px solid transparent;
+        border-top: 20px solid $dark-grey;
+        right: -8px;
+  
+      }
+  }
+
+
+
+  &__author {
+    color: $black;
+    font-family: "Roboto Bold";
+    font-size: 1.4rem;
+
+  }
+
+  &__date {
+    float: right;
+    color: $text-grey;
+    font-size: 1.2rem;
+  }
+
+}

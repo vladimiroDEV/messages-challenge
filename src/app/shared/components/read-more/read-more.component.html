@@ -1,0 +1,5 @@
+<div class="read-more" [style.height]="collapsedText ? maxBoxHeight + 'px' : 'auto'">{{text}}
+</div>
+<a class="text-primary pointer" *ngIf="collapsedText" (click)="collapseText()">
+    ...Read more
+</a>

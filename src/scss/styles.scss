@@ -1,0 +1,96 @@
+// font 
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Regular'), url('../assets/fonts/Roboto-Regular.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Bold'), url('../assets/fonts/Roboto-Bold.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Medium'), url('../assets/fonts/Roboto-Medium.woff') format('woff');
+    }
+    
+
+    
+
+    @font-face {
+    font-family: 'Roboto Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Black'), url('../assets/fonts/Roboto-Black.woff') format('woff');
+    }
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: $scrollbar-track 0% 0% no-repeat padding-box;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scrollbar-thumb 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+}
+
+
+
+    
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;
+    font-family: "Roboto Regular";
+}
+
+body {
+
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: $default-font-size;
+    // line-height: $default-line-height;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.hide {
+    display: none;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.text-primary{
+   color: $primary;
+}

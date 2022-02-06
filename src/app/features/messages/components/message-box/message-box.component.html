@@ -1,0 +1,17 @@
+<div class="message-box" [ngClass]="{'message-box--reverse': message.id==2}">
+    <div class="message-box__avatar">
+        <img src="{{message.authorPhoto}}" alt="image">
+    </div>
+    <div class="message-box__content">
+        <div class="message-box__top">
+            <span class="message-box__author">{{message.name}} {{message.surname}}</span>
+            <span class="message-box__date">{{message.publishingDate | middledotDate}}</span>
+        </div>
+        <div class="message-box__text"
+            [ngClass]="message.id==2  ?'message-box__text--right' : 'message-box__text--left' ">
+            <app-read-more [text]=message.message></app-read-more>
+        </div>
+
+    </div>
+
+</div>
