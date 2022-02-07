@@ -3,6 +3,6 @@ export interface Message {
   name: string;
   surname: string;
   authorPhoto: string;
-  publishingDate: Date;
+  publishingDate: number;
   message: string;
 }

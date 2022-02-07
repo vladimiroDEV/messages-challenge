@@ -16,7 +16,7 @@ export class ReadMoreComponent implements OnInit {
   // maximum height of the container
   @Input() maxBoxHeight: number = 65;
 
-  collapsedText: boolean = true;
+  collapsedText: boolean = false;
   constructor(
     private elementRef: ElementRef,
     private cdRef: ChangeDetectorRef

@@ -1,4 +1,5 @@
-<div class="message-box" [ngClass]="{'message-box--reverse': message.id==2}">
+<div class="message-box"
+    [ngClass]="{'message-box--reverse': message.name==currentName && message.surname ==currentSurname}">
     <div class="message-box__avatar">
         <img src="{{message.authorPhoto}}" alt="image">
     </div>
@@ -8,7 +9,7 @@
             <span class="message-box__date">{{message.publishingDate | middledotDate}}</span>
         </div>
         <div class="message-box__text"
-            [ngClass]="message.id==2  ?'message-box__text--right' : 'message-box__text--left' ">
+            [ngClass]="message.name==currentName && message.surname ==currentSurname  ?'message-box__text--right' : 'message-box__text--left' ">
             <app-read-more [text]=message.message></app-read-more>
         </div>
 

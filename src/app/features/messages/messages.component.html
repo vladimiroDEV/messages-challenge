@@ -3,12 +3,12 @@
         <app-filter-messages></app-filter-messages>
     </div>
 
-    <div class="wrapper__body">
+    <div class="wrapper__body" #scrollMe>
         <div class="wrapper__body--blur"></div>
-        <app-message-list></app-message-list>
+        <app-message-list [messages]=messaggesList></app-message-list>
     </div>
 
     <div class="wrapper__footer">
-        <app-message-create></app-message-create>
+        <app-message-create (onMessageAdd)="onMessageAdd($event)"></app-message-create>
     </div>
 </div>
