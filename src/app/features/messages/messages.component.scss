@@ -1,5 +1,42 @@
 @import "../../../scss/variables";
+@import "../../../scss/mixins";
 
-.create-message-container{
-    background:$light-grey;
+
+
+.wrapper{
+   
+     @include  box-shadow(9px, 9px, 9px, -6px rgba(89,85,85,0.15));
+     position:absolute;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+     height: 100%;
+     width: 100%;
+     max-width: $max-width;
+     margin: 0 auto;
+
+    &__header{
+        //height:10vh;
+        background: $primary;
+    }
+    &__body{
+        border-left: 5px solid $light-grey;
+        border-right: 5px solid $light-grey;
+        position: relative;
+        flex:1;
+         overflow: auto;
+         &--blur {
+             height:150px;
+             width:100%;
+             max-width: calc(#{$max-width} - 20px); // border and scrollbar
+             position:fixed;
+             z-index: 100;
+             @include linear-gradient(rgba(255,255,255,0),rgba(255, 255, 255, 0.99),0deg);
+         }
+
+    }
+    &__footer{
+        background:$light-grey;
+    }
 }

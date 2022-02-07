@@ -1,4 +1,14 @@
-<app-message-list></app-message-list>
-<div class="create-message-container">
-    <app-message-create></app-message-create>
+<div class="wrapper">
+    <div class="wrapper__header">
+        <app-filter-messages></app-filter-messages>
+    </div>
+
+    <div class="wrapper__body">
+        <div class="wrapper__body--blur"></div>
+        <app-message-list></app-message-list>
+    </div>
+
+    <div class="wrapper__footer">
+        <app-message-create></app-message-create>
+    </div>
 </div>

@@ -1,0 +1,37 @@
+
+@import "../../../../../scss/_variables";
+
+.publish {
+    &__container {
+        padding:1rem
+    }
+  &__input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $light-grey;
+    padding: 15px;
+    outline: none;
+  }
+  &__input:hover {
+    outline: none;
+  }
+  &__input:focus, &__input:active {
+    outline: 1px solid $primary;
+  }
+  &__button{
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+    padding: 1rem 2rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  &__submit{
+    text-align: right;
+  }
+
+ 
+}
