@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter-messages',
@@ -6,7 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filter-messages.component.scss'],
 })
 export class FilterMessagesComponent implements OnInit {
+  @Output() filter = new EventEmitter<string>();
   constructor() {}
 
   ngOnInit(): void {}
+
+  /**
+   *
+   * @param filter search parameter
+   */
+  filterInput(filter: any) {
+    //console.log(filter);
+    //emit search parameter to parent component
+    this.filter.emit(filter.target.value);
+  }
 }

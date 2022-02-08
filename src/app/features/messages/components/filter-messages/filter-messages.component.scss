@@ -8,6 +8,13 @@
         border-radius: 5px;
         border: 1px solid #ddd;
         padding: 1rem;
+        outline:none;
+      }
+      &__input:hover {
+        outline: none;
+      }
+      &__input:focus, &__input:active {
+        outline: none;
       }
 
 }

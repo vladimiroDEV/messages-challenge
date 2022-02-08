@@ -2,26 +2,42 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
-## Development server
+## Clone Repository
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```shell
+git clone https://github.com/vladimiroDEV/messages-challenge.git
+cd messages-challenge
+```
 
-## Code scaffolding
+## Install npm packages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install packages described in` package.json`
 
-## Build
+```shell
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Run dev
 
-## Running unit tests
+```shell
+npm run start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Development server
 
-## Running end-to-end tests
+`http://localhost:4200/`.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+<br>
 
-## Further help
+## Run build prod
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```shell
+npm run build --prod
+```
+
+The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+<!-- ## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). -->
+<br>
