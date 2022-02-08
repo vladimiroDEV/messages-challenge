@@ -7,7 +7,7 @@ import { MessageListComponent } from './components/message-list/message-list.com
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MessageCreateComponent } from './components/message-create/message-create.component';
 import { FilterMessagesComponent } from './components/filter-messages/filter-messages.component';
-import { StorageService } from 'src/app/shared/services/storage.service';
+import { MessagesService } from './services/messages.service';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,6 @@ import { StorageService } from 'src/app/shared/services/storage.service';
     FilterMessagesComponent,
   ],
   imports: [CommonModule, MessagingRoutingModule, SharedModule],
-  // providers: [StorageService],
+  providers: [MessagesService],
 })
 export class MessagesModule {}

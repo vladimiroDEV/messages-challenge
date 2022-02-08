@@ -49,7 +49,7 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
   }
   @HostListener('window:scroll', [])
   onScroll(event): void {
-    if (this.messagesScrollContainer.nativeElement.scrollTop == 0) {
+    if (this.messagesScrollContainer.nativeElement.scrollTop === 0) {
       this.showBlurContainer = false;
     } else {
       this.showBlurContainer = true;
@@ -67,7 +67,7 @@ export class MessagesComponent implements OnInit, AfterViewChecked {
     }, 0.8);
   }
   onInputFilter(filter: string) {
-    if (filter != '') {
+    if (filter !== '') {
       this.messaggesList = this._storageService
         .get<Message[]>(this.storageKey)
         .filter(
