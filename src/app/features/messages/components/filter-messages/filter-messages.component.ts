@@ -16,8 +16,6 @@ export class FilterMessagesComponent implements OnInit {
    * @param filter search parameter
    */
   filterInput(filter: any) {
-    //console.log(filter);
-    //emit search parameter to parent component
     this.filter.emit(filter.target.value);
   }
 }
