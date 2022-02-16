@@ -17,10 +17,7 @@ export class ReadMoreComponent implements OnInit {
   @Input() maxBoxHeight: number = 65;
 
   collapsedText: boolean = false;
-  constructor(
-    private elementRef: ElementRef,
-    private cdRef: ChangeDetectorRef
-  ) {}
+  constructor(private elementRef: ElementRef) {}
 
   ngOnInit(): void {}
 
@@ -30,8 +27,6 @@ export class ReadMoreComponent implements OnInit {
     if (currentHeight > this.maxBoxHeight) {
       this.collapsedText = true;
     }
-    // trigger detection
-    this.cdRef.detectChanges();
   }
 
   collapseText(): void {
